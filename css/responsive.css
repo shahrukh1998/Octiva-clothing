@@ -1,0 +1,30 @@
+@media (max-width:767px) {
+    .banner-2 {
+        min-height:170px;
+    }
+.storyArea {
+height: auto;
+margin:30px -20px;
+}
+    .storyArea .storyImage  {
+        width:40px;
+        height: 40px;
+    }
+    .storyBox span {
+        left:-10%;
+        font-size:7px;
+    }
+
+    .storyArea .row {
+        margin:0;
+    }
+    .storyArea .col {
+        margin:0;
+        padding:0px;
+
+    }
+    .popUp {
+        display: none;
+    }
+}
+

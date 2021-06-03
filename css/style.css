@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    /* font-family: cursive;
+     */
+     font-family: Arial, sans-serif;
+}
+p {
+    margin-bottom: 0;;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    /* font-family: cursive; */
+    font-family: Arial, sans-serif;
+}
+
+
+ul {
+    list-style:none;
+}
+.blackMenu {
+    color:#fff;
+    text-align: center;
+
+}
+.blackMenu .col-md-3 {
+    border-right: 1px solid #fff;
+    
+        min-height: 60px;
+
+}
+.blackMenu .col-md-3:last-child {
+    border-right:none;
+}
+.storyArea  {
+    /* background:url(https://img-kotontr.mncdn.com/images/2021/nisan/kadin-240x240.jpg); */
+height: 170px;
+/* position: relative; */
+/* justify-content: center; */
+
+
+}
+
+a {
+    color:unset; 
+    text-decoration: none;
+    font-family: cursive;
+}
+img {
+    max-width: 100%;
+}
+a:hover {
+    color:inherit;
+}
+
+.storyArea .storyImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #000;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+}
+.storyBox {
+    position: relative;
+}
+.storyBox span{
+    position: absolute;
+    bottom: -22px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #000;
+    left: -29%;
+}
+
+.top-right-all{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.top-right-all a {
+    text-decoration: none;
+    padding-right:6px;
+}
+.top-right-all span {
+    display: block;
+    font-size:12px;
+    
+}
+
+/* Banner */
+
+.heroBanner {
+    background:url(../images/banner-1.jpg);
+    background-position: center -115px;
+   
+    background-size: cover;
+    min-height: 550px;
+    background-attachment: fixed;
+}
+.shopBtn {
+    text-decoration: none;
+    border: 3px solid;
+    padding: 8px 33px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #212529;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    transition: all .6s ease-in-out;
+
+}
+
+.shopBtn:hover {
+    background:#212529;
+    color:#fff;
+    transition: all .6s ease-in-out;
+}
+.banner-2, .beachWearing {
+    /* background:url(../images/banner-1.jpg); */
+    background-position: center!important;
+   
+    background-size:100%!important;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat!important;
+    object-fit: cover;
+}
+.banner-2 img {
+    
+    max-height: 570px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar {
+    position: unset;
+}
+.sub-menu-con {
+    padding-right: 50px;
+    background: #fff;
+    max-height: 530px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    display: block;
+    border-top: 1px solid #e5e5e5;
+    min-height: auto;
+}
+.sub-menu-con {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left:0;
+    width: 100%;
+    z-index: 9999;
+    /* top:132px; */
+    padding-left:50px;
+}
+
+.sub-menu-con a {
+    font-weight: bold;
+    line-height: 2.0;
+    text-transform: uppercase;
+}
+
+ ul.navbar-nav li:hover .sub-menu-con{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* menu Images */
+
+ .collectionImg {
+     width:48px;
+     height: 48px;
+     border-radius: 100%;
+     background-size:cover!important;
+     margin-right:10px;
+ }
+
+ 
+ .respectLink {
+     
+     height:234px;
+     border:1px solid #000;
+     display: block;
+ }
+ .respectImage {
+    background-size: cover!important;
+    background-position: center center;
+    height: 234px;
+    overflow: hidden;
+}
+
+
+
+ /* Product Box*/
+
+ .productBox {
+     box-shadow: 0px 0px 10px 1px #247cff66;
+     border-radius: 10px;
+ }
+
+ .productInfo {
+     padding:15px 10px 10px;
+     
+ }
+
+
+ /* PopUp Box */
+
+ .popUp {
+     position: fixed;
+     left:20px;
+     top:40%;
+     max-width: 250px;
+     height: 200px;
+     background:rgba(0,0,0,0.3);
+     border:2px solid;
+     z-index: 9999;
+     transform:translate(0%, -50%);
+     transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ }
+ .popUp:hover {
+    background:rgba(0,0,0,0.7);
+    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ }
+
+
+ /* Footer  */
+
+ footer {
+     background:#09212c;
+
+ }
+ 
+ footer h3 , footer a {
+     color:#fff;
+     line-height: 1.5;
+     position: relative;
+ }
+ footer h3:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: -1%;
+    left: 0;
+    background: #ccc;
+    overflow: visible;
+ }
+ footer a {
+    line-height: 2.3;
+    text-transform: uppercase;
+ }
+
+ footer ul li a i.fa {
+    background: #fff;;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    line-height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    color:#000;
+    font-size:25px;
+ }
