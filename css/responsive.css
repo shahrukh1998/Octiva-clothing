@@ -28,3 +28,99 @@ margin:30px -20px;
     }
 }
 
+
+
+  
+  .left-sidebar .new .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .left-sidebar .new .form-group span{
+      float: right;
+  }
+  .left-sidebar .new .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .left-sidebar .new .form-group label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .left-sidebar .new .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #bdbdbd;
+    /* box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%); */
+    padding: 10px;
+    display: inline-block;
+    /* position: relative; */
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .left-sidebar .new .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    background: black;
+  }
+  .pagination .page-link{
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6f6f6f;
+    background-color: transparent;
+  }
+  .page-link:hover{
+    background-color: transparent;
+  }
+  .page-item.disabled .page-link{
+    background-color: transparent;
+  }
+  .pagination  .page-item:not(:first-child) .page-link {
+    margin-left: 8px;
+}
+.pagination .page-link.active{
+    background-color: #6f6f6f !important;
+    color: #fff;
+}
+.swiper-container .swiper-pagination , .swiper-container .swiper-button-next, .swiper-container .swiper-button-prev{
+    visibility: hidden;
+ }
+.swiper-container:hover .swiper-pagination , .swiper-container:hover .swiper-button-next, .swiper-container:hover .swiper-button-prev{
+   visibility: visible;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+    bottom: auto;
+    width: 100%;
+    left: auto;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+.swiper-container .swiper-button-next:after, .swiper-container .swiper-button-prev:after{
+    font-size: 23px;
+    color: #000;
+}
+.swiper-pagination-bullet-active{
+    background: #000;
+}
